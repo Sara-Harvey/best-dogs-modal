@@ -12,15 +12,6 @@ interface Dog {
 export const DogList = () => {
   const [dogs, setDogs] = useState<Dog[]>([]);
   const [selectedDog] = useState<number | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setModalOpen(true);
-  };
-
-  const handleClose = () => {
-    setModalOpen(false);
-  };
 
   const onSelectDog = (event: any) => {
     const selectedDogName = event.target.value;
@@ -43,11 +34,7 @@ export const DogList = () => {
             ))}
           </Select>
         </ListContainer>
-        <AddDogField
-          onCreateDog={onCreateDog}
-          handleClickOpen={handleClickOpen}
-          handleClose={handleClose}
-        />
+        <AddDogField onCreateDog={onCreateDog} />
       </DogListContainer>
     </div>
   );
