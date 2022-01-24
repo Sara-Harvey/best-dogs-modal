@@ -3,7 +3,7 @@ import { makeStyles, Theme } from "@material-ui/core";
 
 export const modalStyles = makeStyles((theme: Theme) => ({
   modalPlacement: {
-    width: "100vw",
+    width: "80vw",
     height: "50vh",
     marginLeft: "25%",
     marginTop: "8%"
@@ -38,7 +38,7 @@ export const AddDogContainer = styled.div`
 `;
 
 export const DogButton = styled.button`
-  background-color: darkgrey;
+  background-color: #03045e;
   border-radius: 10px;
   border: none;
   color: white;
@@ -54,7 +54,7 @@ export const DogListContainer = styled.div`
   align-items: center;
   justify-items: center;
   padding: 8px;
-  border-color: darkgrey;
+  border-color: #03045e;
   border-style: solid;
   border-width: 1.5px;
   border-radius: 15px;
@@ -65,6 +65,7 @@ export const DogListContainer = styled.div`
 
 export const ListContainer = styled.div`
   flex: 1;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
   padding: 6px;
@@ -79,8 +80,7 @@ export const DogNameContainer = styled.div`
   flex-grow: 4;
   margin: 8px;
   padding: 6px;
-  border-color: darkgrey;
   border-radius: 15px;
-  background-color: darkgrey;
+  background-color: #03045e;
   font-size: 1.25em;
 `;
