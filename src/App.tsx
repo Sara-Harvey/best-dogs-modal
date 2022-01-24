@@ -5,9 +5,8 @@ import { DogNameContainer } from "./AddDogStyles";
 export default function App() {
   return (
     <div className="App">
-      <div class="flexcontainer">
+      <div className="flexcontainer">
         <h1>Who's the best dog ever?</h1>
-        <p>A registry of the best</p>
         <div>
           <DogList />
           <DogNameContainer>
