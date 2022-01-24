@@ -5,8 +5,6 @@ import { useFormik } from "formik";
 
 interface AddDogFieldProps {
   onCreateDog: (name: string) => Promise<void>;
-  handleClickOpen: () => any;
-  handleClose: () => any;
 }
 
 interface DogFormValues {
@@ -68,7 +66,11 @@ export const AddDogField = (props: AddDogFieldProps) => {
               error={formik.touched.dogName && Boolean(formik.errors.dogName)}
               helperText={formik.touched.dogName && formik.errors.dogName}
             />
-            <DogButton type="submit" style={{ margin: "10px 0px" }}>
+            <DogButton
+              id="submitButton"
+              type="submit"
+              style={{ margin: "10px 0px" }}
+            >
               Submit
             </DogButton>
           </form>
